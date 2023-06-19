@@ -1,0 +1,115 @@
+* {
+    font-family: "Plus Jakarta Sans", "sans-serif";
+    font-weight: 700!important;
+}
+
+body {
+    /* background-color: #212121; */
+    /* color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    padding: 1.5em 0.5em;
+    margin: 0em;
+    color: #20525c!important;
+    background-color: #fff!important;
+}
+
+i, a, p, h1, h2, h3, h4, h5, h6{
+    margin: 0em;
+    font-style: normal;
+}
+
+.dots{
+    color: #20525c;
+    background-color: #fff;
+}
+
+.drop-down {
+    background-color: #fff;
+    color: #20525c;
+    border: 0px;
+    padding: 0em;
+    margin: 0em;
+}
+
+.drop-down-options {
+    background-color: #fff;
+    color: #20525c;
+    border: 0px;
+}
+
+.list{
+    width: 8em;
+    margin: 0em;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+
+a , .list>a {
+    color: #20525c;
+    text-decoration: none!important;
+    margin: 0.4em ;
+    color: #20525c;
+}
+
+a>i{
+    color: #20525c;
+}
+
+.icon{
+    margin-right: 0.5em;
+}
+
+i{
+    color: #54c2cc;
+    font-style: normal;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    column-gap: 1em;
+}
+
+column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    row-gap: 1em;
+}
+
+.button {
+    color: #20525c;
+    background-color: #fff;
+    width: 5em;
+    height: 2.5em;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+
+.button:active {
+    background-color: #212121;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    row-gap: 1em;
+}
