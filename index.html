@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8"></meta>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-    <title>Document</title>
+    <title>Cricket History JSON</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <!-- icons cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
     <!-- font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="main.css"></link>
     <!-- bootstrap -->
@@ -18,7 +19,14 @@
 </head>
 
 <body>
-    <h1 class="center">Cricket History <i>JSON Server</i></h1>
+    <column class="top">
+        <h1 class="left">Cricket History <i>JSON Server</i></h1>
+        <row class="row-top">
+            <form>
+                <label for="input">Enter <i>ICC Tournament</i> Year</label>
+                <input required type="text" class="input" id="input" placeholder="1992 - 2023">
+                <button type="submit" class="submit"><i class="bi bi-search icon"></i>See Result</button>
+            </form>
             <div class="dropdown">
                 <button class="drop-down" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <h2 class="bi bi-three-dots-vertical dots"></h2>
@@ -31,6 +39,22 @@
                     <li class="list"><a target="_blank" href="https://www.youtube.com/@AhadSTS/" class="drop-down-options" type="button"><i class="bi bi-youtube icon"></i>YouTube</a></li>
                 </ul>
             </div>
+        </row>
+    </column>
+    <column class="results">
+        <label for="year"><i>Ye</i>ar:</label>
+        <p id="year" class="result"></p>
+        <label for="tournament"><i>To</i>urnament:</label>
+        <p id="tournament" class="result"></p>
+        <label for="format"><i>Fo</i>rmat:</label>
+        <p id="format" class="result"></p>
+        <label for="winner"><i>Wi</i>nner:</label>
+        <p id="winner" class="result"></p>
+        <label for="winner-captain"><i>Wi</i>nner Team Captain:</label>
+        <p id="winner-captain" class="result"></p>
+        <label for="runner-up"><i>Ru</i>nner Up:</label>
+        <p id="runner-up" class="result"></p>
+    </column>
 
     <p class="center">Thanks For Visiting Regards! Muhammad Ahad</p>
     <!-- sweet alert -->
@@ -40,4 +64,5 @@
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+
 </html>
