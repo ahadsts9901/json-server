@@ -128,7 +128,7 @@ column {
     width: 100%;
     row-gap: 0.3em;
     /* padding-left: 1em; */
-    background-image: url(../assets/background.png);
+    background-image: url(./background.png);
     background-repeat: repeat;
 }
 
@@ -155,9 +155,11 @@ form label {
 
 .result {
     margin: 0em;
-    padding: 0.3em;
+    padding: 1em;
     border: 1px solid #20413e;
-    height: 2em;
+    /* min-height: 3em; */
+    display: flex;
+    flex-wrap: wrap;
     /* min-width: 5em; */
     width: 90%;
     color: #20413e;
