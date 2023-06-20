@@ -127,6 +127,7 @@ column {
     align-items: center;
     width: 100%;
     row-gap: 1em;
+    min-height: 15em;
     /* padding-left: 1em; */
     background-image: url(./background.png);
     background-repeat: repeat;
@@ -229,6 +230,13 @@ footer {
     align-items: center;
     padding: 0.5em 1em;
     row-gap: 1em;
+}
+
+.top-left {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    /* align-self: center!important; */
 }
 
 ::placeholder {

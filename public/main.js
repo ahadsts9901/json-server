@@ -16,7 +16,7 @@ window.cricket = function(event) {
         })
         .catch(function(error) {
             console.error(error.data);
-            document.querySelector(".results").innerHTML = `<h1>No ICC Tournament In ${document.getElementById("input").value}</h1>`
+            document.querySelector(".results").innerHTML = `<h1 class="top-left">No ICC Tournament In ${year}</h1>`
         })
 
     document.getElementById("input").value = ""
