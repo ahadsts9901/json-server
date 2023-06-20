@@ -126,7 +126,7 @@ column {
     justify-content: stretch;
     align-items: center;
     width: 100%;
-    row-gap: 0.3em;
+    row-gap: 1em;
     /* padding-left: 1em; */
     background-image: url(./background.png);
     background-repeat: repeat;
