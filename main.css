@@ -128,6 +128,8 @@ column {
     width: 100%;
     row-gap: 0.3em;
     /* padding-left: 1em; */
+    background-image: url(./background.png);
+    background-repeat: repeat;
 }
 
 label {
@@ -147,6 +149,8 @@ form label {
     border: 1px solid #20413e;
     height: 2em;
     /* min-width: 5em; */
+    color: #20413e;
+    background-color: #fff;
 }
 
 .result {
@@ -156,6 +160,8 @@ form label {
     height: 2em;
     /* min-width: 5em; */
     width: 90%;
+    color: #20413e;
+    background-color: #fff;
 }
 
 .submit {
