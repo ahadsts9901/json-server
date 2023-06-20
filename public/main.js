@@ -6,13 +6,15 @@ window.cricket = function(event) {
         .then(function(response) {
             console.log(response.data);
 
-            // document.querySelector("#result").innerHTML =
-            // `current temperature is ${response.data.tempInC}°C`
-
+            document.getElementById("year").innerHTML = response.data.year
+            document.getElementById("tournament").innerHTML = response.data.tournament
+            document.getElementById("format").innerHTML = response.data.format
+            document.getElementById("winner").innerHTML = response.data.winner
+            document.getElementById("winner-captain").innerHTML = response.data.captain
+            document.getElementById("runner-up").innerHTML = response.data.runnerUP
+            document.getElementById("host").innerHTML = response.data.host
         })
         .catch(function(error) {
-            // handle error
             console.error(error.data);
-            // document.querySelector("#result").innerHTML = "error in getting weather data"
         })
 }
