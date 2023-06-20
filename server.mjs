@@ -253,20 +253,18 @@ app.get('/cricket/:year', (req, res) => {
         }
     };
     let userInputYear = req.params.year;
-
     let cricketDataToSend = cricketData[userInputYear];
 
     if (cricketDataToSend) {
         res.send(cricketDataToSend);
     } else {
-        res.status(404)
-            .send(`No ICC Tournament In ${userInputYear}`);
+        res.status(404).send(`No ICC Tournament in ${req.params.year}`);
     }
 });
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Example app listening on port ${PORT}`)
-})
+    console.log(`Example app listening on port ${PORT}`);
+});
