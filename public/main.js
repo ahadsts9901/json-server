@@ -16,7 +16,14 @@ window.cricket = function(event) {
         })
         .catch(function(error) {
             console.error(error.data);
-            document.querySelector(".results").innerHTML = `<h1 class="top-left">No ICC Tournament In ${year}</h1>`
+            
+            document.getElementById("year").innerHTML = year
+            document.getElementById("tournament").innerHTML = "No ICC Tournament"
+            document.getElementById("format").innerHTML = "--"
+            document.getElementById("winner").innerHTML = "--"
+            document.getElementById("winner-captain").innerHTML = "--"
+            document.getElementById("runner-up").innerHTML = "--"
+            document.getElementById("host").innerHTML = "--"
         })
 
     document.getElementById("input").value = ""
