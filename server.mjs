@@ -246,9 +246,9 @@ app.get('/cricket/:year', (req, res) => {
             year: '2023',
             tournament: 'ICC Cricket World Cup, ICC World Test Championship',
             format: 'ODI(50 Overs), Test',
-            winner: 'TBD, Australia',
-            captain: 'TBD, Pat Cummins',
-            runnerUP: 'TBD, India',
+            winner: 'Australia, Australia',
+            captain: 'Pat Cummins, Pat Cummins',
+            runnerUP: 'India, India',
             host: 'India, England(Final)'
         }
     };
